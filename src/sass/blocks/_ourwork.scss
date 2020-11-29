@@ -1,0 +1,28 @@
+.ourwork {
+    padding: 51px 0 57px 0;
+    min-height: 619px;
+    &__wrapper {
+        padding-top: 37px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        text-align: center;
+    }
+    &__content {
+        margin-top: 28px;
+        width: 359px;
+    }
+    &__minititle {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 30px;
+        color: $main-color;
+    }
+    &__descr {
+        color: #3a3a3a;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 22px
+    }
+    
+}

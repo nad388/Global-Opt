@@ -1,0 +1,192 @@
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width:  991px) {
+    .promo {
+        padding: 10px;
+        .header {
+            &__phone {
+                font-size: 15px;
+            }
+            .button {
+                margin: 0 auto;
+            }
+            &__prevsubtitle {
+                margin-top: 20px;
+            }
+            &__maintitle {
+                font-size: 65px;
+            }
+            &__mainsubtitle {
+                font-size: 38px;
+            }
+        }
+        &__wrapper {
+            flex-direction: column;
+        }
+        &__icon {
+            margin-top: 15px;
+        }
+    }
+    .advantages {
+        padding: 58px 0 20px 0;
+        &__wrapper {
+            justify-content: center;
+        }
+    }
+    .ourwork {
+        &__wrapper {
+            justify-content: space-around;
+        }
+        &__item {
+            margin-top: 20px;
+        }
+    }
+}
+
+@media (max-width:  768px) {
+    .promo {
+        .header {
+            &__contacts {
+                margin: 0 auto;
+            }
+            &__prevsubtitle {
+                margin-top: 30px;
+            }
+            &__maintitle {
+                font-size: 50px;
+            }
+            &__mainsubtitle {
+                font-size: 30px;
+            }
+        }
+        .line-dot {
+            width: 50%;
+        } 
+    }
+    
+}
+
+@media (max-width:  575px) {
+    .promo {
+        .header {
+            &__logo {
+                margin-bottom: 18px;
+            }
+            &__prevsubtitle {
+                font-size: 20px;
+            }
+            &__maintitle {
+                font-size: 40px;
+            }
+            &__mainsubtitle {
+                font-size: 22px;
+            }
+            nav {
+                .menu {
+                    position: fixed;
+                    flex-direction: column;
+                    justify-content: center;
+                    top: 0;
+                    left: -100%;
+                    width: 50%;
+                    height: 100vh;
+                    padding: 20px 15px;
+                    background-color: rgba(0, 0, 0, .8);
+                    transition: 0.6s all;
+                    z-index: 1000;
+                    &:hover {
+                        color: $main-color;
+                    }
+                    &_active {
+                        left: 0;
+                    }
+                    &_item {
+                        padding-right: 0;
+                        border: none;
+                        margin: 10px 0;
+                        text-align: center;
+                    }
+                    &_link {
+                        font-size: 18px;
+                        padding: 0;
+                    }             
+                }
+                .hamburger {
+                    display: block;
+                    position: fixed;
+                    right: 20px;
+                    top: 20px;
+                    transform: translateY(-50%);
+                    width: 26px;
+                    height: 12px;
+                    z-index: 1000;
+                    span {
+                        display: block;
+                        height: 3px;
+                        width: 100%;
+                        background-color: $main-color;
+                        margin-bottom: 3px;
+                        transition: 0.5s all;
+                    }
+                    &_active {
+                        span {
+                            margin-bottom: -2px;
+                            &:nth-child(1) {
+                                transform: translateY(3px) rotate(-45deg);
+                            }
+                            &:nth-child(2) {
+                                display: none;
+                            }
+                            &:nth-child(3) {
+                                transform: translateY(3px) rotate(45deg);
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+    .promo__descr {
+        font-size: 14px;
+    }
+    .advantages {
+        &__icon {
+            margin-right: 0;
+        }
+        &__item {
+            flex-direction: column;
+        }
+        &__content {
+            width: 100%;
+            padding: 5px;
+            text-align: center;
+        }
+    }
+    .ourwork {
+        .title {
+            font-size: 23px;
+        }
+        .subtitle {
+            font-size: 16px;
+            padding: 0;
+        }
+        &__wrapper {
+            padding-top: 25px;
+        }
+        &__descr {
+            font-size: 14px;
+            padding: 0 25px;
+        }
+    }
+    .agent {
+        .title_white {
+            font-size: 23px;
+        }
+        .subtitle_mini {
+            padding: 0 10px;
+        }
+    }
+}
