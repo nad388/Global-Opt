@@ -19,4 +19,12 @@
     &_small {
         margin-top: 25px;
     }
+    &_submit {
+        width: 180px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 237px;
+        box-shadow: 0 0 0 10px rgba(255,255,255, 1);
+    }
 }

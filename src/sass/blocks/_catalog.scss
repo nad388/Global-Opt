@@ -1,6 +1,7 @@
 .catalog {
     min-height: 952px;
     padding: 53px 0 58px 0;
+    position: relative;
     &__content {
         margin-top: 32px;
         display: flex;
@@ -51,10 +52,14 @@
         }
     }
     .consultation {
+        position: relative;
         #consultation-form {
             width: 1140px;
             height: 166px;
             border: 1px solid #898989;
+        }
+        &__icon {
+            padding: 21px;
         }
     }
 }
