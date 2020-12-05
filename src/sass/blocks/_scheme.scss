@@ -1,0 +1,33 @@
+.scheme {
+    min-height: 454px;
+    padding: 51px 0 46px 0;
+    background-color: #f3f3f3;
+    &__wrapper {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    &__icon {
+        margin-top: 12px;
+    }
+    &__item {
+        padding-top: 26px;
+        text-align: center;
+        padding-right: 20px;
+    }
+    &__minititle {
+        color: $main-color;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 32px;
+    }
+    &__descr {
+        color: #3a3a3a;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 22px;
+        height: 77px;
+        width: 257px;
+    }
+}
