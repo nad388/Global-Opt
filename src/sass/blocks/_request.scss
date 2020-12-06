@@ -1,0 +1,31 @@
+.request {
+    background: url(../img/bg/question-bg.jpg) center (center/cover) no-repeat;
+    min-height: 438px;
+    padding: 62px 0 79px 0;
+    &__wrapper {
+        margin: 0 auto;
+        width: 896px;
+        min-height: 297px;
+        background-color: rgba(255, 255, 255, 0.7);
+    }
+    &__top {
+        height: 68px;
+        background-color: #25333c;
+        margin-bottom: 18px;
+        text-align: center;
+    }
+    &__header {
+        color: #ffffff;
+        font-size: 19px;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding-top: 20px;
+        line-height: 15px;
+    }
+    &__subheader {
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+}

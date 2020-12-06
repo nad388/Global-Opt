@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     input {
         width: 268px;
         height: 45px;
@@ -12,5 +13,16 @@
         font-weight: 300;
         padding: 0 28px;
         margin-right: 5px;
+    }
+    textarea {
+        width: 813px;
+        height: 71px;
+        margin-top: 8px;
+        border: 1px solid rgba(0, 0, 0, 0.21);
+        border-radius: 15px;
+        color: #101010;
+        font-size: 13px;
+        font-weight: 300;
+        padding: 18px 24px;
     }
 }

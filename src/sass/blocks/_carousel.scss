@@ -1,0 +1,43 @@
+.carousel {
+    position: relative;
+    min-height: 470px;
+    padding: 51px 0 65px 0;
+    text-align: center;
+    margin: 0 auto;
+    &-inner {
+        margin-top: 31px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-item {
+        width: 601px;
+        margin: 0 auto;
+    }
+
+    &-user {
+        margin-top: 19px;
+        color: #3a3a3a;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    &-content {
+        color: #3a3a3a;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 22.01px;
+    }
+    .prev, .next {
+        position: absolute;
+        z-index: 100;
+        background-color: #fff;
+        border: none;
+        top: 140px;
+    }
+    .prev {
+        left: 458px;
+    }
+    .next {
+        left: 650px;
+    }
+}

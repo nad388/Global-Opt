@@ -26,5 +26,9 @@
         transform: translateX(-50%);
         top: 237px;
         box-shadow: 0 0 0 10px rgba(255,255,255, 1);
+        &_nb {
+            box-shadow: none;
+            top: 225px;
+        }
     }
 }
