@@ -1,6 +1,3 @@
-@media (max-width: 1200px) {
-
-}
 
 @media (max-width:  991px) {
     .promo {
@@ -302,6 +299,16 @@
             &__subtitle {
                 padding: 0 0;
             }
+        }
+    }
+    .consultation {
+        .circle {
+            &_orange {
+                top: 68px;
+            }
+        }
+        .button {
+            top: 394px;
         }  
     }
     .scheme {
@@ -314,5 +321,4 @@
             left: 0;
         }
     }
-
 }
