@@ -8,6 +8,9 @@
     font-size: 12px;
     font-weight: 400;
     text-transform: uppercase;
+    &:hover {
+        background-color: #e93b3b;
+    }
     &_big {
         display: block;
         width: 230px;

@@ -43,6 +43,55 @@
             margin-top: 20px;
         }
     }
+    .catalog {
+        &__content {
+            justify-content: center;
+            .catalog-item {
+                margin-bottom: 10px;
+            }
+        }
+    }
+    .consultation {
+        #consultation-form {
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+        }
+        input {
+            margin: 10px auto;
+        }
+        button {
+            top: 370px;
+        }
+    }
+    .carousel {
+        .prev {
+            left: 380px;
+            top: 170px;
+        }
+        .next {
+            left: 580px;
+            top: 170px;
+        }
+    }
+    .footer {
+        &__head {
+            justify-content: center;
+        }
+        &__contacts {
+            margin-left: 100px;
+        }
+        &__phone {
+            font-size: 17px;
+            margin-right: 5px;
+        }
+        &__bottom {
+            justify-content: center;
+        }
+        .politics {
+            margin: 0 50px;
+        }
+    }
 }
 
 @media (max-width:  768px) {
@@ -65,9 +114,51 @@
             width: 50%;
         } 
     }
-    
+    .carousel {
+        .prev {
+            left: 250px;
+            top: 170px;
+        }
+        .next {
+            left: 480px;
+            top: 170px;
+        }
+    }
+    .request {
+        &__wrapper {
+            height: 450px;
+        }
+        #order-form {
+            display: flex;
+            flex-direction: column;
+        }
+        input {
+            margin: 10px auto;
+        }
+        textarea {
+            width: 268px;
+        }
+        .button_submit_nb {
+            top: 380px;
+        } 
+    }
+    .footer {
+        &__head {
+            padding: 0 5px;
+            justify-content: space-around;
+        }
+        &__contacts {
+            margin-left: 50px;
+        }
+        &__phone {
+            font-size: 14px;
+            margin-right: 5px;
+        }
+        &__descr {
+            font-size: 14px;
+        }
+    }
 }
-
 @media (max-width:  575px) {
     .promo {
         .header {
@@ -189,4 +280,39 @@
             padding: 0 10px;
         }
     }
+    .modal {
+        &__close {
+            top: 10px;
+            right: 30px;
+        }
+    }
+    .carousel {
+        display: none;
+    }
+    .footer {
+        &__bottom {
+            margin: 5px;
+        }
+        button {
+            margin-top: 10px;
+        }
+    }
+    .catalog {
+        .container {
+            &__subtitle {
+                padding: 0 0;
+            }
+        }  
+    }
+    .scheme {
+        &__item {
+            padding: 0;
+        }
+    }
+    .contacts {
+        &__info {
+            left: 0;
+        }
+    }
+
 }

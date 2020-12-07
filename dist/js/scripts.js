@@ -69,3 +69,67 @@ function slider() {
   });
 }
 slider();
+
+// pageup
+
+$(document).ready(function() {
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 1200) {
+        $('.pageup').fadeIn();
+        } else {
+        $('.pageup').fadeOut();
+        }
+    });
+
+    $("a[href='#up']").click(function() {
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+        return false;
+     });
+
+    new WOW().init(); 
+    
+    
+    // modal 
+
+    $('[data-modal=consultation]').on('click', function() {
+        $('.overlay, #consultation').fadeIn('slow');
+    });
+    $('.modal__close').on('click', function () {
+        $('.overlay, #consultation').fadeOut('slow');
+    });
+
+    //validation
+
+    function valideForms(form) {
+        $(form).validate({
+          rules: {
+            name: "required",
+            phone: "required",
+            email: {
+            required: true,
+            email: true
+            }
+          },
+          messages: {
+            name: "Пожалуйста, введите свое имя",
+            phone: "Пожалуйста, введите свой номер телефона",
+            email: {
+              required: "Пожалуйста, введите свою почту",
+              email: "Неправильно введен адрес почты"
+            }
+          }
+        
+        });
+      };
+      valideForms('#consultation-form');
+      valideForms('#consultation form');
+      valideForms('#order-form');
+
+      $('input[name=phone]').mask("+7 (999) 999-99-99");
+      $('form').trigger('reset');
+    
+});
+
+
+
+
